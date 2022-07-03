@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "../assets/three.module.js"
+            }
+        }
+    </script>
+    <script src ="../assets/vapebottleapp.js" type="module"></script>
+    <!--aria-label is where the initial image link is passed to will need to set up url manually depending on your server takes a direct link to image for this to work-->
+    <div class="img-big-wrap" aria-label="../assets/model/textures/goldenbanana.png">
+        <div>
+            <!--Loading icon, can use custom css item if you want, this just uses a gif, displays until loading manager completes then disappears-->
+            <p>
+                <img src="../assets/blue-loader.gif" id="bottle_3D_Loading" style="position: absolute; height: 20%;left:37%;top:29%;  text-align: center;">
+            </p>
+            <!--Sets up the canvas that the 3D scene will be held in-->
+            <canvas style="height: 100%; margin: auto; width: 100%; visibility: initial; touch-action: none;" id="bottle_3D" class="loadingScreen" aria-label="https://www.ttkltd.co.nz/GamerSauceCompressed/textures/goldenbanana.png" data-engine="three.js r141" width="450" height="450"></canvas>
+        </div>
+        <div style="margin: auto;display: flex;">
+            <select id="labelSelect" style="margin: auto;">
+                <option value="../assets/model/textures/goldenbanana.png" selected="">Golden Banana</option>
+                <option value="../assets/model/textures/bubbletrouble.png">Bubble Trouble</option> 
+            </select>
+        </div>
+    </div> 
+</body>
+</html>
