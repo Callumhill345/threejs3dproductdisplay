@@ -29,6 +29,16 @@ The model has been UV unwrapped to match the dimensions of the label so all the 
 <p>The select element holds the links to the other textures which will be used to update the model to show different labels by adding an event listener to the element.</p>
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- include css file  for 3d model-->
+    <link rel="stylesheet" href="./css/model_3d_styles.css">
+</head>
+<body>
                         <script type="text/javascript" async src="./js/es-module-shims.js"></script>
                         <script type="importmap">
                             {
@@ -54,12 +64,10 @@ The model has been UV unwrapped to match the dimensions of the label so all the 
                                     <option value="GamerSauceCompressed/textures/goldenbanana.png" selected="">Golden Banana</option>
                                     <option value="GamerSauceCompressed/textures/bubbletrouble.png">Bubble Trouble</option>
                                     <option value="GamerSauceCompressed/textures/levelup.png">Level Up</option> 
-
-
-
-                                    
                                 </select>
                             </div>
-                        </div>
+                        </div>           
+</body>
+</html>
 
 ```
