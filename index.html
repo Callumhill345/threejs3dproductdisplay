@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- include css file  for 3d model-->
+    <link rel="stylesheet" href="./css/model_3d_styles.css">
+</head>
+<body>
+<!-- goes above img-big-wrap -->
+                        <script type="text/javascript" async src="./js/es-module-shims.js"></script>
+                        <script type="importmap">
+                            {
+                                "imports": {
+                                    "three": "./js/three.module.js",
+                                    "OrbitControls": "./js/OrbitControls.js"
+                                }
+                            }
+                        </script>
+                        <script src ="js/vapebottleapp.js" type="module"></script>
+                        <div class="img-big-wrap"> <!--Original Div used in the vape shed store-->
+                            <div>
+                                <p>
+                                    <label for="progressLoader" id="progressLoader_label">3D View Loading...</label>
+                                    <progress id="progressLoader" max="100" value="0"></progress>
+                                </p>
+                                <canvas style="height: 100%; margin: auto; width: 100%; visibility: initial; touch-action: none;" id="bottle_3D" class="loadingScreen" data-texture="https://www.ttkltd.co.nz/GamerSauceCompressed/textures/goldenbanana.png" data-engine="three.js r141" width="450" height="450"></canvas>
+                                <a data-fancybox="gallery" id="mainImageLink" href="https://cdn-vapeshed.co.nz/assets/images/products/8914/gamer-sauce-juice-3757943.png">
+                                    <!--Original product image was here-->
+                                </a>
+                            </div>
+                            <div style="margin: auto;display: flex;">
+                                <select id="labelSelect" style="margin: auto;">
+                                    <option value="GamerSauceCompressed/textures/goldenbanana.png" selected="">Golden Banana</option>
+                                    <option value="GamerSauceCompressed/textures/bubbletrouble.png">Bubble Trouble</option>
+                                    <option value="GamerSauceCompressed/textures/levelup.png">Level Up</option> 
+                                </select>
+                            </div>
+                        </div> <!-- slider-product.// -->
+
+            
+</body>
+</html>
