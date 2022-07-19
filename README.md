@@ -29,26 +29,38 @@ The model has been UV unwrapped to match the dimensions of the label so all the 
 <p>The select element holds the links to the other textures which will be used to update the model to show different labels by adding an event listener to the element.</p>
 
 ```html
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "../assets/three.module.js"
-            }
-        }
-    </script>
-    <script src ="../assets/vapebottleapp.js" type="module"></script>
-    <div class="img-big-wrap" aria-label="../assets/model/textures/goldenbanana.png">
-        <div>
-            <p>
-                <img src="../assets/blue-loader.gif" id="bottle_3D_Loading" style="position: absolute; height: 20%;left:37%;top:29%;  text-align: center;">
-            </p>
-            <canvas style="height: 100%; margin: auto; width: 100%; visibility: initial; touch-action: none;" id="bottle_3D" class="loadingScreen" aria-label="https://www.ttkltd.co.nz/GamerSauceCompressed/textures/goldenbanana.png" data-engine="three.js r141" width="450" height="450"></canvas>
-        </div>
-        <div style="margin: auto;display: flex;">
-            <select id="labelSelect" style="margin: auto;">
-                <option value="../assets/model/textures/goldenbanana.png" selected="">Golden Banana</option>
-                <option value="../assets/model/textures/bubbletrouble.png">Bubble Trouble</option> 
-            </select>
-        </div>
-    </div> 
+                        <script type="text/javascript" async src="./js/es-module-shims.js"></script>
+                        <script type="importmap">
+                            {
+                                "imports": {
+                                    "three": "./js/three.module.js",
+                                    "OrbitControls": "./js/OrbitControls.js"
+                                }
+                            }
+                        </script>
+                        <script src ="js/vapebottleapp.js" type="module"></script>
+                        <div class="img-big-wrap"> <!--Original Div used in the vape shed store-->
+                            <div>
+                                <p>
+                                    <label for="progressLoader" id="progressLoader_label">3D View Loading...</label>
+                                    <progress id="progressLoader" max="100" value="0"></progress>
+                                </p>
+                                <canvas style="height: 100%; margin: auto; width: 100%; visibility: initial; touch-action: none;" id="bottle_3D" class="loadingScreen" data-texture="https://www.ttkltd.co.nz/GamerSauceCompressed/textures/goldenbanana.png" data-engine="three.js r141" width="450" height="450"></canvas>
+                                <a data-fancybox="gallery" id="mainImageLink" href="https://cdn-vapeshed.co.nz/assets/images/products/8914/gamer-sauce-juice-3757943.png">
+                                    <!--Original product image was here-->
+                                </a>
+                            </div>
+                            <div style="margin: auto;display: flex;">
+                                <select id="labelSelect" style="margin: auto;">
+                                    <option value="GamerSauceCompressed/textures/goldenbanana.png" selected="">Golden Banana</option>
+                                    <option value="GamerSauceCompressed/textures/bubbletrouble.png">Bubble Trouble</option>
+                                    <option value="GamerSauceCompressed/textures/levelup.png">Level Up</option> 
+
+
+
+                                    
+                                </select>
+                            </div>
+                        </div> <!-- slider-product.// -->
+
 ```
