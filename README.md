@@ -39,7 +39,7 @@ The model has been UV unwrapped to match the dimensions of the label so all the 
                             }
                         </script>
                         <script src ="js/vapebottleapp.js" type="module"></script>
-                        <div class="img-big-wrap"> <!--Original Div used in the vape shed store-->
+                        <div class="img-big-wrap">
                             <div>
                                 <p>
                                     <label for="progressLoader" id="progressLoader_label">3D View Loading...</label>
@@ -47,7 +47,6 @@ The model has been UV unwrapped to match the dimensions of the label so all the 
                                 </p>
                                 <canvas style="height: 100%; margin: auto; width: 100%; visibility: initial; touch-action: none;" id="bottle_3D" class="loadingScreen" data-texture="https://www.ttkltd.co.nz/GamerSauceCompressed/textures/goldenbanana.png" data-engine="three.js r141" width="450" height="450"></canvas>
                                 <a data-fancybox="gallery" id="mainImageLink" href="https://cdn-vapeshed.co.nz/assets/images/products/8914/gamer-sauce-juice-3757943.png">
-                                    <!--Original product image was here-->
                                 </a>
                             </div>
                             <div style="margin: auto;display: flex;">
@@ -61,6 +60,6 @@ The model has been UV unwrapped to match the dimensions of the label so all the 
                                     
                                 </select>
                             </div>
-                        </div> <!-- slider-product.// -->
+                        </div>
 
 ```
